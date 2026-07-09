@@ -26,10 +26,10 @@ Time tracking software for businesses
 ## 🛠️ Технологический стек
 
 - **Язык программирования:** C#
-- **Фреймворк:** .NET Core / .NET Framework (уточни свою версию, например, .NET 6)
+- **Фреймворк:** .NET Core / .NET Framework
 - **Интерфейс:** Windows Presentation Foundation (WPF)
 - **База данных:** MySQL
-- **ORM:** Entity Framework Core (или укажи ADO.NET, если работал через него)
+- **ORM:** Entity Framework Core
 - **Система контроля версий:** Git, GitHub
 - **Дополнительно:** Хранимые процедуры, индексы для оптимизации запросов
 
