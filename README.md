@@ -37,7 +37,7 @@ Time tracking software for businesses
 
 ### Требования
 - Windows 10/11
-- [.NET SDK / Runtime](https://dotnet.microsoft.com/download) (укажи версию)
+- [.NET SDK / Runtime](https://dotnet.microsoft.com/download)
 - [MySQL Server](https://dev.mysql.com/downloads/) (версия 5.7 или выше)
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) (рекомендуется)
 
