@@ -1,0 +1,59 @@
+﻿<Window x:Class="Lota.Views.TimeLogDialogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Запись рабочего времени" Height="330" Width="400"
+        ResizeMode="NoResize" WindowStartupLocation="CenterOwner"
+        Background="{DynamicResource MaterialDesignPaper}">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" x:Name="lblTitle" Style="{StaticResource MaterialDesignHeadline6TextBlock}"
+                   Margin="0,0,0,15"/>
+
+        <!-- Выбор сотрудника -->
+        <ComboBox Grid.Row="1" x:Name="cmbEmployee" Margin="0,5"
+                  materialDesign:HintAssist.Hint="Сотрудник"
+                  Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                  DisplayMemberPath="FullName"
+                  SelectedValuePath="Id"/>
+
+        <!-- Дата и время входа -->
+        <DockPanel Grid.Row="2" Margin="0,5">
+            <TextBlock Text="Вход" VerticalAlignment="Center" Width="40"/>
+            <DatePicker x:Name="dpLoginDate" Width="120" Margin="0,0,5,0"
+                        Style="{StaticResource MaterialDesignDatePicker}"/>
+            <materialDesign:TimePicker x:Name="tpLoginTime" Width="100" Is24Hours="True"
+                                       Style="{StaticResource MaterialDesignTimePicker}"/>
+        </DockPanel>
+
+        <!-- Дата и время выхода (может быть пустым) -->
+        <DockPanel Grid.Row="3" Margin="0,5">
+            <TextBlock Text="Выход" VerticalAlignment="Center" Width="40"/>
+            <DatePicker x:Name="dpLogoutDate" Width="120" Margin="0,0,5,0"
+                        Style="{StaticResource MaterialDesignDatePicker}"/>
+            <materialDesign:TimePicker x:Name="tpLogoutTime" Width="100" Is24Hours="True"
+                                       Style="{StaticResource MaterialDesignTimePicker}"/>
+        </DockPanel>
+
+        <!-- Примечания -->
+        <TextBox Grid.Row="4" x:Name="txtNotes" Margin="0,5"
+                 materialDesign:HintAssist.Hint="Примечания (необязательно)"
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                 TextWrapping="Wrap" AcceptsReturn="True"/>
+
+        <StackPanel Grid.Row="5" HorizontalAlignment="Right" Orientation="Horizontal" Margin="0,15,0,0">
+            <Button Content="Сохранить" Style="{StaticResource MaterialDesignFlatDarkBgButton}"
+                    IsDefault="True" Click="BtnSave_Click" Margin="0,0,10,0"/>
+            <Button Content="Отмена" Style="{StaticResource MaterialDesignOutlinedButton}"
+                    IsCancel="True" Click="BtnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

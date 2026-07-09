@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="Lota.Views.Pages.TimesheetPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Панель управления -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock Text="Месяц:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <ComboBox x:Name="cmbMonth" Width="90" Margin="0,0,10,0"
+                      Style="{StaticResource MaterialDesignComboBox}"
+                      SelectedValuePath="Tag" SelectedIndex="0">
+                <ComboBoxItem Content="Январь" Tag="1"/>
+                <ComboBoxItem Content="Февраль" Tag="2"/>
+                <ComboBoxItem Content="Март" Tag="3"/>
+                <ComboBoxItem Content="Апрель" Tag="4"/>
+                <ComboBoxItem Content="Май" Tag="5"/>
+                <ComboBoxItem Content="Июнь" Tag="6"/>
+                <ComboBoxItem Content="Июль" Tag="7"/>
+                <ComboBoxItem Content="Август" Tag="8"/>
+                <ComboBoxItem Content="Сентябрь" Tag="9"/>
+                <ComboBoxItem Content="Октябрь" Tag="10"/>
+                <ComboBoxItem Content="Ноябрь" Tag="11"/>
+                <ComboBoxItem Content="Декабрь" Tag="12"/>
+            </ComboBox>
+            <ComboBox x:Name="cmbYear" Width="55" Margin="0,0,10,0"
+                      Style="{StaticResource MaterialDesignComboBox}" IsEditable="True"/>
+            <Button Content="Сформировать" Style="{StaticResource MaterialDesignFlatDarkBgButton}"
+                    Margin="10,0,10,0" Click="BtnGenerate_Click"/>
+            <Button Content="Экспорт в Excel" Style="{StaticResource MaterialDesignOutlinedButton}"
+                    Click="BtnExport_Click"/>
+            <Button Content="CSV для 1С" Style="{StaticResource MaterialDesignOutlinedButton}"
+            Margin="10,0,10,0" Click="BtnExportCsv_Click"/>
+            <Button Content="Печать" Style="{StaticResource MaterialDesignOutlinedButton}"
+            Click="BtnPrint_Click"/>
+        </StackPanel>
+
+        <!-- Таблица с прокруткой -->
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <DataGrid x:Name="gridTimesheet"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      HeadersVisibility="Column"
+                      Style="{StaticResource MaterialDesignDataGrid}"
+                      FrozenColumnCount="3">
+                <!-- Столбцы будут созданы в коде -->
+            </DataGrid>
+        </ScrollViewer>
+
+        <!-- Итоговая информация -->
+        <TextBlock Grid.Row="2" x:Name="lblTotalInfo" Margin="0,5" FontWeight="Bold"/>
+    </Grid>
+</UserControl>

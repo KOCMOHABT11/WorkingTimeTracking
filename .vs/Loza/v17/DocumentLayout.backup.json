@@ -1,0 +1,116 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|c:\\users\\\u0438\u0433\u043E\u0440\u044C\\source\\repos\\loza\\loza\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|solutionrelative:loza\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|c:\\users\\\u0438\u0433\u043E\u0440\u044C\\source\\repos\\loza\\loza\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|solutionrelative:loza\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|c:\\users\\\u0438\u0433\u043E\u0440\u044C\\source\\repos\\loza\\loza\\views\\employeedialogwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|solutionrelative:loza\\views\\employeedialogwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|c:\\users\\\u0438\u0433\u043E\u0440\u044C\\source\\repos\\loza\\loza\\views\\usereditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|solutionrelative:loza\\views\\usereditwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|c:\\users\\\u0438\u0433\u043E\u0440\u044C\\source\\repos\\loza\\loza\\views\\timelogdialogwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|solutionrelative:loza\\views\\timelogdialogwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|c:\\users\\\u0438\u0433\u043E\u0440\u044C\\source\\repos\\loza\\loza\\views\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E42368F8-C7D7-40D8-BC1E-FB72E83036B6}|Loza\\Loza.csproj|solutionrelative:loza\\views\\registrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Loza\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\MainWindow.xaml",
+              "RelativeToolTip": "Loza\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-21T22:37:11.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\Views\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "Loza\\Views\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\Views\\LoginWindow.xaml",
+              "RelativeToolTip": "Loza\\Views\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-21T22:37:16.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeDialogWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\Views\\EmployeeDialogWindow.xaml",
+              "RelativeDocumentMoniker": "Loza\\Views\\EmployeeDialogWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\Views\\EmployeeDialogWindow.xaml",
+              "RelativeToolTip": "Loza\\Views\\EmployeeDialogWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-21T22:39:03.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserEditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\Views\\UserEditWindow.xaml",
+              "RelativeDocumentMoniker": "Loza\\Views\\UserEditWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\Views\\UserEditWindow.xaml",
+              "RelativeToolTip": "Loza\\Views\\UserEditWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-21T22:38:03.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TimeLogDialogWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\Views\\TimeLogDialogWindow.xaml",
+              "RelativeDocumentMoniker": "Loza\\Views\\TimeLogDialogWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\Views\\TimeLogDialogWindow.xaml",
+              "RelativeToolTip": "Loza\\Views\\TimeLogDialogWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-21T22:38:02.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegistrationWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\Views\\RegistrationWindow.xaml",
+              "RelativeDocumentMoniker": "Loza\\Views\\RegistrationWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0418\u0433\u043E\u0440\u044C\\source\\repos\\Loza\\Loza\\Views\\RegistrationWindow.xaml",
+              "RelativeToolTip": "Loza\\Views\\RegistrationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-21T22:37:55.03Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

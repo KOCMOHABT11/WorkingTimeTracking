@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="Lota.Views.Pages.TimeLogPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="445*"/>
+            <ColumnDefinition Width="411*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Панель инструментов -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10" Grid.ColumnSpan="3">
+            <ComboBox x:Name="cmbEmployee" Width="230" Margin="0,0,10,0"
+                      materialDesign:HintAssist.Hint="Сотрудник"
+                      Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                      DisplayMemberPath="Text" SelectedValuePath="Value"
+                      SelectionChanged="CmbEmployee_SelectionChanged" Height="37"/>
+            <DatePicker x:Name="dpFrom" Width="95" Margin="0,0,10,0"
+                        materialDesign:HintAssist.Hint="С"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        SelectedDateChanged="FilterChanged" Height="32"/>
+            <DatePicker x:Name="dpTo" Width="95" Margin="0,0,10,0"
+                        materialDesign:HintAssist.Hint="По"
+                        Style="{StaticResource MaterialDesignDatePicker}"
+                        SelectedDateChanged="FilterChanged" Height="34"/>
+            <Button Content="Сегодня" Style="{StaticResource MaterialDesignOutlinedButton}"
+                    Margin="0,0,10,0" Click="BtnToday_Click" Width="95" Height="36"/>
+            <Button Content="Добавить запись" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="BtnAdd_Click" Height="39"/>
+            <Separator Style="{StaticResource MaterialDesignSeparator}" Margin="5,0"/>
+        </StackPanel>
+
+        <!-- Таблица -->
+        <DataGrid Grid.Row="1" x:Name="gridTimeLog"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  SelectionMode="Single"
+                  SelectionUnit="FullRow"
+                  HeadersVisibility="Column"
+                  Style="{StaticResource MaterialDesignDataGrid}" Grid.ColumnSpan="3">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Сотрудник" Binding="{Binding EmployeeFullName}" Width="*"/>
+                <DataGridTextColumn Header="Вход" Binding="{Binding LoginTime, StringFormat={}{0:dd.MM.yyyy HH:mm:ss}}" Width="Auto"/>
+                <DataGridTextColumn Header="Выход" Binding="{Binding LogoutTime, StringFormat={}{0:dd.MM.yyyy HH:mm:ss}}" Width="Auto"/>
+                <DataGridTextColumn Header="Примечания" Binding="{Binding Notes}" Width="*"/>
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Редактировать" Click="MenuItemEdit_Click"/>
+                    <MenuItem Header="Удалить" Click="MenuItemDelete_Click"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+    </Grid>
+</UserControl>

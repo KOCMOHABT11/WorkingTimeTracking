@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="Lota.Views.Pages.EmployeesPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:pages="clr-namespace:Lota.Views.Pages">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="135*"/>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Панель инструментов -->
+        <DockPanel Grid.Row="0" Margin="0,0,0,10" Grid.ColumnSpan="3">
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+                <Button Content="Добавить" Style="{StaticResource MaterialDesignFlatDarkBgButton}"
+                        Margin="0,0,10,0"
+                        Click="BtnAdd_Click"/>
+                <Button Content="Редактировать" Style="{StaticResource MaterialDesignOutlinedButton}"
+                        Margin="0,0,10,0"
+                        Click="BtnEdit_Click"
+                        IsEnabled="{Binding SelectedItem, ElementName=gridEmployees, Converter={StaticResource IsNotNullConverter}}"/>
+                <Button Content="Удалить" Style="{StaticResource MaterialDesignOutlinedButton}"
+                        Margin="0,0,10,0"
+                        Click="BtnDelete_Click"
+                        IsEnabled="{Binding SelectedItem, ElementName=gridEmployees, Converter={StaticResource IsNotNullConverter}}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                <TextBox x:Name="txtSearch" Width="200"
+                         materialDesign:HintAssist.Hint="Поиск..."
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                         TextChanged="TxtSearch_TextChanged"/>
+            </StackPanel>
+        </DockPanel>
+
+        <!-- Таблица сотрудников -->
+        <DataGrid Grid.Row="1" x:Name="gridEmployees"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  SelectionMode="Single"
+                  SelectionUnit="FullRow"
+                  HeadersVisibility="Column"
+                  Style="{StaticResource MaterialDesignDataGrid}" Grid.ColumnSpan="3">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" Width="*"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}" Width="*"/>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding MiddleName}" Width="*"/>
+                <DataGridTextColumn Header="Должность" Binding="{Binding Position}" Width="*"/>
+                <DataGridTextColumn Header="Отдел" Binding="{Binding Department}" Width="*"/>
+                <DataGridTextColumn Header="Дата приёма" Binding="{Binding HireDate, StringFormat={}{0:dd.MM.yyyy}}" Width="Auto"/>
+                <DataGridTextColumn Header="Статус" Binding="{Binding Status}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
